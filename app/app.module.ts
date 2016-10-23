@@ -17,6 +17,10 @@ import { HeroService } from './hero.service';
 
 import { DashboardComponent } from './dashboard.component';
 
+import { MyTestComponent } from './components/mytest.component';
+import { MyTestModule } from './components/mytest.module';
+
+
 
 import { routing } from './app.routing';
 
@@ -28,6 +32,7 @@ import { routing } from './app.routing';
         HttpModule,
         InMemoryWebApiModule.forRoot(InMemoryDataService),
         routing
+        , MyTestModule
     ],
     declarations: [
         AppComponent,
@@ -35,6 +40,7 @@ import { routing } from './app.routing';
         HeroDetailComponent,
 
         DashboardComponent
+        //, MyTestComponent
     ],
     bootstrap: [
         AppComponent
